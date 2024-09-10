@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FF7061;
+    color: #000;
+    position: relative;
+}
+
+header {
+    background-color: #FFCC00;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+}
+
+.logo img {
+    width: 100px; /* Define o tamanho da logo */
+    margin-right: 10px; /* Espaço entre a logo e o título */
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    flex-grow: 1;
+    position: relative;
+    background-color: transparent;
+    color: #000;
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+header h1:hover {
+    background-image: url('img/R.jpg'); /* Insira o caminho da sua imagem */
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text; /* Necessário para Chrome, Safari e Edge */
+    color: transparent;
+    transition: background-image 0.3s ease; /* Transição suave para a imagem */
+}
+
+.slogan {
+    background-color: #FFCC00;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.ideais, .ideais-nao-defendidos {
+    background-color: #FFCC00;
+    padding: 20px;
+    margin: 20px;
+}
+
+.ideais h2, .ideais-nao-defendidos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.colunas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coluna {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.ideais-nao-defendidos ul {
+    padding: 10px;
+    list-style-type: disc;
+}
+
+aside.candidato {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+aside.candidato img {
+    width: 100px; /* Ajusta o tamanho da imagem do candidato */
+    height: auto;
+}
+
+aside.candidato p {
+    font-size: 1.2rem;
+    background-color: #FFCC00;
+    padding: 5px;
+}
+
+.pessoas-rejeitadas {
+    background-color: #FF7061;
+    padding: 20px;
+    text-align: center;
+}
+
+.pessoas-rejeitadas p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pessoas-rejeitadas .imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pessoas-rejeitadas img {
+    width: 100px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+/* Novas regras para a img-final */
+.img-final img {
+    width: 100%; /* A imagem ocupará 100% da largura */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaçamento extra ao redor da imagem */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove qualquer padding */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/uniao2.0.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa ao rolar a página */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: #000;
+    position: relative;
+}
+
